@@ -23,10 +23,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DemoRpcServer {
 
-    public static void main(String[] args) throws InterruptedException {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(new String[] {"classpath*:motan_demo_server.xml"});
-        MotanSwitcherUtil.setSwitcherValue(MotanConstants.REGISTRY_HEARTBEAT_SWITCHER, true);
-        System.out.println("server start...");
-    }
+	public static void main(String[] args) throws InterruptedException {
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
+				new String[] { "classpath*:motan_demo_server.xml" });
+		MotanSwitcherUtil.setSwitcherValue(MotanConstants.REGISTRY_HEARTBEAT_SWITCHER, true);
+		System.out.println("server start...");
+	}
 
 }
